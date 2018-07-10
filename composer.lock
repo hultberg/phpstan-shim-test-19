@@ -4,21 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df36c602b3835c6c768a59ed2065064f",
+    "content-hash": "a3761c1f319baee6c82e928f9e4e4656",
     "packages": [
+        {
+            "name": "nikic/php-parser",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/35b8caf75e791ba1b2d24fec1552168d72692b12",
+                "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^7.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2018-06-03T11:33:10+00:00"
+        }
+    ],
+    "packages-dev": [
         {
             "name": "phpstan/phpstan-shim",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpstan/phpstan-shim",
-                "reference": "5edb6772e6e4983f6f688b25991dc41309a5aa0d"
+                "url": "https://github.com/hultberg/phpstan-shim",
+                "reference": "077da131679a62865e140c9602a758be9eb0d4bf"
             },
             "require": {
                 "php": "~7.1"
             },
             "replace": {
-                "nikic/php-parser": "^4.0.2",
                 "phpstan/phpstan": "self.version"
             },
             "bin": [
@@ -31,19 +83,13 @@
                     "dev-master": "0.10-dev"
                 }
             },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
             "license": [
                 "MIT"
             ],
             "description": "PHPStan Phar distribution",
-            "time": "2018-07-03T11:10:00+00:00"
+            "time": "2018-07-10T13:17:03+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
