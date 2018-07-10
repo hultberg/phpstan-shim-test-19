@@ -9,7 +9,7 @@
         "nikic/php-parser": "^4.0"
     },
     "require-dev": {
-        "phpstan/phpstan-shim": "dev-master"
+        "hultberg/phpstan-shim": "dev-master"
     },
     "license": "MIT"
 }
