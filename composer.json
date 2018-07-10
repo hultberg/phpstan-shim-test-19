@@ -1,0 +1,15 @@
+{
+    "name": "hultberg/test",
+    "description": "A test",
+    "type": "library",
+	"repositories": [
+		{ "type": "git", "url": "https://github.com/phpstan/phpstan-shim" }
+	],
+    "require": {
+        "nikic/php-parser": "^4.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-shim": "dev-master"
+    },
+    "license": "MIT"
+}
