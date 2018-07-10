@@ -4,7 +4,7 @@ This branch uses https://github.com/hultberg/phpstan-shim/commit/077da131679a628
 
 As expected with a PHAR, phpstan runs nice and smooth:
 ```console
-$ vendor/bin/phpstan analyse -l 1 test.php
+$ vendor/bin/phpstan analyse -c phpstan.neon -l 1 test.php
  1/1 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
 
                                                                                                                
